@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %} User {% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+<div class="row">
+
+    <div class="col">
+        <div class="small-box bg-info">
+            <div class="inner">
+              <h2>Find <br>Fingerprint</h2>
+              <p></p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-search"></i>
+            </div>
+            <a href="/find" class="small-box-footer">Find <i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+    </div><br>
+
+  <div class="col">
+    <div class="small-box bg-success">
+        <div class="inner">
+          <h2>Enroll <br>Fingerprint</h2>
+          <p></p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-android-add"></i>
+        </div>
+        <a href="/enrollf" class="small-box-footer">Create <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+  </div><br>
+
+  <div class="col">
+    <div class="small-box bg-danger">
+        <div class="inner">
+          <h2>Delete <br>Fingerprint</h2>
+          <p></p>
+        </div>
+        <div class="icon">
+          <i class="ion ion-android-delete"></i>
+        </div>
+        <a href="/del" class="small-box-footer">Delete <i class="fas fa-arrow-circle-right"></i></a>
+      </div>
+  </div><br>
+
+ 
+
+</div>
+  
+</div>
+</div>
+
+{% block chart %} {% endblock %}
+  {% endblock %}

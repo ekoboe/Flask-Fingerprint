@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% block title %} Monitoring dan Control Lampu{% endblock %}
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-md font-weight-bold text-primary text-uppercase mb-1">
+                        Lampu Ruang Tamu</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                    {% if led1 == 1 %} Menyala
+                    {% else %} Mati
+                    {% endif %}
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="/led1/on" class="btn btn-outline-success btn-circle">
+                        <i class="fas fa-check"></i>
+                    </a>
+                    <a href="/led1/off" class="btn btn-outline-danger btn-circle">
+                        <i class="fas fa-power-off"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div><br>
+    <div class="col-xs-6 col-md-4">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-md font-weight-bold text-primary text-uppercase mb-1">
+                        Lampu Ruang Makan</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                    {% if led2 == 1 %} Menyala
+                    {% else %} Mati
+                    {% endif %}
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="/led2/on" class="btn btn-outline-success btn-circle">
+                        <i class="fas fa-check"></i>
+                    </a>
+                    <a href="/led2/off" class="btn btn-outline-danger btn-circle">
+                        <i class="fas fa-power-off"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div><br>
+  <div class="col-xs-6 col-md-4">
+    <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-md font-weight-bold text-primary text-uppercase mb-1">
+                        Lampu Kamar Tidur</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                    {% if led3 == 1 %} Menyala
+                    {% else %} Mati
+                    {% endif %}
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="/led3/on" class="btn btn-outline-success btn-circle">
+                        <i class="fas fa-check"></i>
+                    </a>
+                    <a href="/led3/off" class="btn btn-outline-danger btn-circle">
+                        <i class="fas fa-power-off"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div><br>
+
+
+    <div class="row">
+      <div class="col-xs-6 col-md-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-md font-weight-bold text-primary text-uppercase mb-1">
+                            Lampu Dapur</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                        {% if led4 == 1 %} Menyala
+                        {% else %} Mati
+                        {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="/led4/on" class="btn btn-outline-success btn-circle">
+                            <i class="fas fa-check"></i>
+                        </a>
+                        <a href="/led4/off" class="btn btn-outline-danger btn-circle">
+                            <i class="fas fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-6 col-md-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-md font-weight-bold text-primary text-uppercase mb-1">
+                            Lampu Kamar Mandi</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                        {% if led5 == 1 %} Menyala
+                        {% else %} Mati
+                        {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="/led5/on" class="btn btn-outline-success btn-circle">
+                            <i class="fas fa-check"></i>
+                        </a>
+                        <a href="/led5/off" class="btn btn-outline-danger btn-circle">
+                            <i class="fas fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-xs-6 col-md-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-md font-weight-bold text-primary text-uppercase mb-1">
+                            Lampu Teras</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                        {% if led6 == 1 %} Menyala
+                        {% else %} Mati
+                        {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="/led6/on" class="btn btn-outline-success btn-circle">
+                            <i class="fas fa-check"></i>
+                        </a>
+                        <a href="/led6/off" class="btn btn-outline-danger btn-circle">
+                            <i class="fas fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+  {% block chart %} {% endblock %}
+  {% endblock %}
